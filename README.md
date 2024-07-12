@@ -5,6 +5,10 @@
 
 I rewrite Da point of Da Watta Needed for JPTV watching via LINUX.
 
+[This editor automatic fook recognize caused some weird command line display of no next line like, sudo apt install make
+sudo apt install gcc is just fook, ignore.
+]
+
 
 @@@@@@@@@@@@@@@@@@hardware
 -sampa

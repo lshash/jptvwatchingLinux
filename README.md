@@ -60,10 +60,10 @@ typically , sampa = n'able computer.
 
 
 2nd, add Da info to udev rules, which specify which devices can be accessible by which group.
-1. exec this.
-sudo vi /etc/udev/rules.d/90-sampa_loader.rules // file add and edit. 
+1. exec this.```
+sudo vi /etc/udev/rules.d/90-sampa_loader.rules // file add and edit. ```
 2. copy this.
-SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0045", MODE="0664", GROUP="video"
+```SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0045", MODE="0664", GROUP="video"```
 
 ” will be fail instead of "
 
@@ -77,21 +77,21 @@ esc to command mode dd enter
 
 8. reboot needed! 
 or
-sudo udevadm control --reload-rules && sudo udevadm trigger
-
+```sudo udevadm control --reload-rules && sudo udevadm trigger
+```
 
 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@testing
 
-udevadm info /dev/bus/usb/001/006, [change da number for appropriate one by lsusb]
+```udevadm info /dev/bus/usb/001/006```, [change da number for appropriate one by lsusb]
 get Da devpath, then
 
-udevadm test /devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5.4 , [this is devpath]
+```udevadm test /devices/pci0000:00/0000:00:14.0/usb1/1-5/1-5.4``` , [this is devpath]
 
 
-/etc/udev/rules.d/90-sampa_loader.rules:1 Invalid key/value pair, ignoring.                                                                 
+```/etc/udev/rules.d/90-sampa_loader.rules:1 Invalid key/value pair, ignoring.                                                                 
 /etc/udev/rules.d/90-sampa_loader.rules:2 Invalid key/value pair, ignoring.    
-
+```
 Seeing this is not good......
 
 
@@ -99,15 +99,15 @@ Seeing this is not good......
 
 @@@@@@@@@@@@@@@@@@add self to group video
 if not you in group video yet, do it.
-
+```
 cat /etc/group
-
+```
 (group name):x:(id):Members
 
 if video there, but no one inside, do adding me to video
-
+```
 sudo usermod -a -G examplegroup exampleusername
-
+```
 
 @@@@@@@@@@@@@@@@@@
 @@@@@@@@@@@@@@@@@@

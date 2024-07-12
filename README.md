@@ -17,32 +17,33 @@ mine as 1st line 2nd line BRABRABRA, weird, but that's okay.]
 
 
 @@@@@@@@@@@@@@@@@@1st installing, for scanning, Re install and Re checking Da status.
+```
 sudo apt install pcscd
 
 pcsc_scan
-
+```
 
 @@@@@@@@@@@@@@@@@@other software
 *cannot be used another os's executable to another os! PLEASE Re install these !
-
+```
 sudo apt install make
 sudo apt install gcc
-
+```
 -b25, 2nd install
-sudo apt install git make gcc g++ pkg-config libpcsclite-dev pcscd
+```sudo apt install git make gcc g++ pkg-config libpcsclite-dev pcscd
 
 cd aribb25
 make clean
 make
 sudo make install
-
+```
 -recfsus, 3rd install
-
+```
 cd src
 make clean
 make B25=1
 sudo make install
-
+```
 
 
 *Please do not break Da source code of these, yes re search in Web and get again

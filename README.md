@@ -77,7 +77,8 @@ esc to command mode dd enter
 
 8. reboot needed! 
 or
-```sudo udevadm control --reload-rules && sudo udevadm trigger
+```
+sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 
 
@@ -150,10 +151,10 @@ sudo usermod -a -G examplegroup exampleusername
 181, bs8
 
 
-
+```
 recfsusb2n --b25 27 - - | vlc - --quiet
 
-
+```
 
 
 

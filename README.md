@@ -8,7 +8,8 @@ I rewrite Da point of Da Watta Needed for JPTV watching via LINUX.
 [This editor automatic fook recognize caused some weird command line display of no next line like, sudo apt install make
 sudo apt install gcc is just fook, ignore.
 ]
-
+[why did you ignore my intention of da 1 line meaning and next line meaning from 1st line, instead, You automatically wrong recognize
+mine as 1st line 2nd line BRABRABRA, weird, but that's okay.]
 
 @@@@@@@@@@@@@@@@@@hardware
 -sampa

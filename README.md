@@ -5,16 +5,20 @@
 
 I rewrite Da point of Da Watta Needed for JPTV watching via LINUX.
 
+<sup>
 [This editor automatic fook recognize caused some weird command line display of no next line like, sudo apt install make
 sudo apt install gcc is just fook, ignore.
 ]
 [why did you ignore my intention of da 1 line meaning and next line meaning from 1st line, instead, You automatically wrong recognize
 mine as 1st line 2nd line BRABRABRA, weird, but that's okay.]
+</sup>
 
 @@@@@@@@@@@@@@@@@@hardware
+
+```
 -sampa
 -card reader
-
+```
 
 @@@@@@@@@@@@@@@@@@1st installing, for scanning, Re install and Re checking Da status.
 ```
@@ -29,15 +33,16 @@ pcsc_scan
 sudo apt install make
 sudo apt install gcc
 ```
--b25, 2nd install
-```sudo apt install git make gcc g++ pkg-config libpcsclite-dev pcscd
+-b25, 2nd install AFTER FIRST.
+```
+sudo apt install git make gcc g++ pkg-config libpcsclite-dev pcscd
 
 cd aribb25
 make clean
 make
 sudo make install
 ```
--recfsus, 3rd install
+-recfsus, 3rd install AFTER SECOND.
 ```
 cd src
 make clean
@@ -55,17 +60,22 @@ source and re use these.
 
 
 @@@@@@@@@@@@@@@@@@group video accessible to n'able usb as sampa, by add udev rules.
-1st, make sure wata sampa in LSUSB command.
-typically , sampa = n'able computer.
+
+**1st, make sure wata sampa in LSUSB command.
+typically , sampa = n'able computer.**
 
 
-2nd, add Da info to udev rules, which specify which devices can be accessible by which group.
+**2nd**, add Da info to udev rules, which specify which devices can be accessible by which group.
+this is done by VI procedure below.
+
+
+
 1. exec this.```
 sudo vi /etc/udev/rules.d/90-sampa_loader.rules // file add and edit. ```
 2. copy this.
 ```SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTRS{idVendor}=="0511", ATTRS{idProduct}=="0045", MODE="0664", GROUP="video"```
 
-” will be fail instead of "
+_” will be fail instead of "_
 
 
 3. i for edit mode
@@ -82,7 +92,7 @@ sudo udevadm control --reload-rules && sudo udevadm trigger
 ```
 
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@testing
+@@@@@@@@@@@@@@@@@@@@@@@@@@@testing(Optional)
 
 ```udevadm info /dev/bus/usb/001/006```, [change da number for appropriate one by lsusb]
 get Da devpath, then

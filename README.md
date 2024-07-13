@@ -28,7 +28,7 @@ pcsc_scan
 ```
 
 @@@@@@@@@@@@@@@@@@other software
-*cannot be used another os's executable to another os! PLEASE Re install these !
+<sup>*cannot be used another os's executable to another os! PLEASE Re install these !</sup>
 ```
 sudo apt install make
 sudo apt install gcc
@@ -51,10 +51,10 @@ sudo make install
 ```
 
 
-*Please do not break Da source code of these, yes re search in Web and get again
+<sup>*Please do not break Da source code of these, yes re search in Web and get again
 Da source is still okay but not so good option, please use Da reliable already successful
 source and re use these.
-
+</sup>
 
 
 
